@@ -17,8 +17,8 @@ const routes: RouteRecordRaw[] = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory("/todo-vuejs/"),
   routes,
 });
-
+console.log("router.options.history", router.options.history);
 export default router;
